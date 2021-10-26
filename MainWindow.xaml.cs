@@ -1,17 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 using Microsoft.Win32;
 using System.IO;
 
@@ -27,6 +15,7 @@ namespace WpfLab3
         {
             InitializeComponent();
             datagrid1.ItemsSource = ity;
+
             ///           Testowe artykuły:
             ///           datagrid1.Items.Add(new Article("Cola", 1, 4));
             ///           datagrid1.Items.Add(new Article("Fanta", 2, 90));
@@ -39,15 +28,6 @@ namespace WpfLab3
             public string IDDat { get; set; }
 
             public int CountDat { get; set; }
-
-            /*
-            public Article(string Name, int ID, int Count)
-            {
-                NameDat = Name;
-                IDDat = ID;
-                CountDat = Count;
-            }
-            */
         }
 
         public void DodArt(string artykul, string ilosc)
