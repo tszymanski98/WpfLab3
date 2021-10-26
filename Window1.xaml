@@ -8,10 +8,10 @@
         Title="Window1" Height="450" Width="800">
     <Grid>
         <Button Click="dodaj_but"  FontWeight="UltraBlack"  FontSize="30" Content="DODAJ" HorizontalAlignment="Left" Margin="550,250,0,0" VerticalAlignment="Top" Height="80" Width="150"/>
-        <TextBox x:Name="art_but" HorizontalAlignment="Left" Margin="150,290,0,0" Text="nazwa_art" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="cen_but" HorizontalAlignment="Left" Margin="300,290,0,0" Text="cena" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox TextChanged="Art_TextChanged" x:Name="art_tb" HorizontalAlignment="Left" Margin="150,290,0,0" Text="nazwa_art" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox TextChanged="Ilo_TextChanged" x:Name="ilo_tb" HorizontalAlignment="Left" Margin="300,290,0,0" Text="ilość" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <Label FontWeight="Medium" FontSize="15" Content="Nazwa artykułu" HorizontalAlignment="Left" Height="30" Margin="150,250,0,0" VerticalAlignment="Top" Width="120"/>
-        <Label FontWeight="Medium" FontSize="15" Content="Cena" HorizontalAlignment="Left" Height="30" Margin="300,250,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label FontWeight="Medium" FontSize="15" Content="Ilość" HorizontalAlignment="Left" Height="30" Margin="300,250,0,0" VerticalAlignment="Top" Width="120"/>
 
     </Grid>
 </Window>
